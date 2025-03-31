@@ -85,7 +85,7 @@ header{
     margin-bottom: 40px;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: #ddd;
   }
   .card {
     border: 1px solid #ddd;
@@ -107,5 +107,19 @@ header{
   }
   .card-text {
     font-size: 1rem;
-    color: #555;
+    color: black;
   }
+
+  /* Footer */
+  footer {
+    background-color: #DC143C;
+  }
+  li {
+    color: black;
+    list-style: none;
+}
+
+#card {
+    background-color: #1a1a1a;
+    color: white;
+}
