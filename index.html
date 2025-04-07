@@ -8,85 +8,54 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <!-- 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <img src="src/logo-header.webp" alt="logo nippo" width="80" height="35">
-        <button class="nav-toggler"type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item nav-button">
-                    <a href="#" class="nav-link">Proposta Pedagógica</a>
-                </li>
-                EXEMPLO DE DROPDOWN LIST NO MENU
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estrutura</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a href="#" class="dropdown-item">opção com texto mais longo</a>
-                        <a href="#" class="dropdown-item">opção a</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">Alguma outra coisa aqui</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Estrutura</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Atividades Extracurriculares</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Preparatórios</a>
-                </li>
-                Exemplo de botão desabilitado
-                <li class="nav-item">
-                    <a href="#" class="nav-link disabled">Desabilitado</a>
-                </li>
-            </ul>
-        </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-crimson fixed-top shadow-sm">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="imgs/logo-header.webp" alt="Logo Nippo" width="120" class="logo-hover">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNippo" 
+                  aria-controls="navbarNippo" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNippo">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link px-3 active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Quem Somos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link px-3 dropdown-toggle" href="#" id="propostaDropdown" 
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Proposta Pedagógica
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="propostaDropdown">
+                          <li><a class="dropdown-item" href="#">Metodologia</a></li>
+                          <li><a class="dropdown-item" href="#">Professores</a></li>
+                          <li><a class="dropdown-item" href="#">Diferenciais</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Concursos e bolsas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Aprovações</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Conteúdos</a>
+                  </li>
+              </ul>
+              <div class="d-flex">
+                  <button type="button" class="btn btn-warning fw-bold">Área do Aluno</button>
+              </div>
+          </div>
+      </div>
     </nav>
- -->
-
- <!-- HEADER START -->
-
- <header class="p-3 text-white">
-    <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-center">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <img src="imgs/logo-header.webp" alt="logo nippo" width="120" height="75" >
-            </a>
-            <ul class="nav col-12 col-lg-auto me-lg-auto d-flex justify-content-center mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-secondary">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white">Quem Somos</a>
-                </li class="nav-item">
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white">Proposta Pedagógica</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white">Concursos e bolsas</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white">Aprovações</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white">Conteúdos</a>
-                </li>
-            </ul>
-            <div class="text-end">
-                <button type="button" class="btn btn-warning">Area do Aluno</button>   
-            </div>
-        </div>
-    </div>
- </header>
-
- <!-- HEADER END -->
 
  <!-- adiciona o carrossel -->
 
@@ -126,158 +95,177 @@
         </button>
     </div>
 
-    <!-- Depoimentos -->
-    <div class="container text-start mt-5">
-        <div class="row flex-nowrap justify-content-center align-items-center">
-            <!-- Coluna da Esquerda -->
-            <div class="col-5 d-flex flex-column" id="left">
-                <h1>Depoimentos</h1>
-                <p class="flex-grow-1 mb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <ul class="list-unstyled d-flex align-items-end justify-content-start ">
-                    <li class="mx-2">
-                        <img
-                            src="imgs/aluno001.png"
-                            class="rounded-circle custom-img active"
-                            alt="Imagem 1"
-                            style="width: 100px; height: 100px; cursor: pointer;"
-                            onclick="mudarVideo('https://www.youtube.com/embed/D0UnqGm_miA?si=8wY7qO1-jFEbGvv0')"
-                        >
-                    </li>
-                    <li class="mx-2">
-                        <img
-                            src="imgs/aluno002.png"
-                            class="rounded-circle custom-img"
-                            alt="Imagem 2"
-                            style="width: 100px; height: 100px; cursor: pointer;"
-                            onclick="mudarVideo('https://www.youtube.com/embed/7X8II6J-6mU?si=xntQfQ9rAUggGZ42')"
-                        >
-                    </li>
-                    <li class="mx-2">
-                        <img
-                            src="imgs/aluno003.png"
-                            class="rounded-circle custom-img"
-                            alt="Imagem 3"
-                            style="width: 100px; height: 100px; cursor: pointer;"
-                            onclick="mudarVideo('https://www.youtube.com/embed/dCFk3iN_gDM?si=DzLm1Y_SXkh0OLuZ')"
-                        >
-                    </li>
-                </ul>
-            </div>
-     
-            <!-- Coluna da Direita -->
-            <div class="col-6 text-center" id="right">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe 
-                        id="videoPlayer"
-                        width="315"
-                        height="500"
-                        src="https://www.youtube.com/embed/D0UnqGm_miA?si=8wY7qO1-jFEbGvv0" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
-                        style="border-radius: 10px;"
-                    ></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br>
 
-    <!-- Cards -->
-    <section class="sectionCards pt-3 pb-5" id="card">
-    <div class="container my-5">
-        <h1 class="title">Por que estudar na Nippo</h1>
-    
-        <div class="row">
-          <div class="col-md-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">15000+</h5>
-                <p class="card-text">Lorem ipsum</p>
+
+        <!-- Depoimentos -->
+    <section class="depoimentos py-5">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Coluna da Esquerda -->
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                  <h1 class="depoimento-titulo mb-4">DEPOIMENTOS</h1>
+                  <p class="depoimento-texto mb-4">
+                      Nossos alunos compartilham suas experiências e conquistas após estudarem na Nippo. 
+                      Veja o que <br> eles têm a dizer sobre como transformamos vidas <br> através da educação.
+                  </p>
+                  <br><br>
+                  <div class="alunos-thumbs d-flex justify-content-center justify-content-lg-start flex-wrap">
+                      <img src="imgs/aluno001.png" class="rounded-circle custom-img active mx-2 mb-3" 
+                          alt="Aluno 1" width="90" height="90"
+                          onclick="mudarVideo('https://www.youtube.com/embed/D0UnqGm_miA?si=8wY7qO1-jFEbGvv0')">
+                      
+                      <img src="imgs/aluno002.png" class="rounded-circle custom-img mx-2 mb-3" 
+                          alt="Aluno 2" width="90" height="90"
+                          onclick="mudarVideo('https://www.youtube.com/embed/7X8II6J-6mU?si=xntQfQ9rAUggGZ42')">
+                      
+                      <img src="imgs/aluno003.png" class="rounded-circle custom-img mx-2 mb-3" 
+                          alt="Aluno 3" width="90" height="90"
+                          onclick="mudarVideo('https://www.youtube.com/embed/dCFk3iN_gDM?si=DzLm1Y_SXkh0OLuZ')">
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">1000+</h5>
-                <p class="card-text">Lorem ipsum</p>
+              
+              <!-- Coluna da Direita -->
+              <div class="col-lg-6">
+                  <div class="ratio ratio-16x9 shadow-lg rounded-3 overflow-hidden">
+                      <iframe id="videoPlayer" src="https://www.youtube.com/embed/D0UnqGm_miA?si=8wY7qO1-jFEbGvv0" 
+                              title="YouTube video player" frameborder="0" 
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              allowfullscreen></iframe>
+                  </div>
               </div>
-            </div>
           </div>
-          <div class="col-md-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">500+</h5>
-                <p class="card-text">Lorem ipsum</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">200+</h5>
-                <p class="card-text">Lorem ipsum</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">99%</h5>
-                <p class="card-text">Lorem ipsum</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">10x</h5>
-                <p class="card-text">Lorem ipsum</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- Formulario -->
-    <form action="resolution.php" method="POST" class="mb-5">
-      <h2>Formulário Tops</h2>
-      <input type="text" name="nameTxt">
-      <button type="submit">Enviar</button>
-    </form>
+        <!-- Letreiro -->
+        <section class="news-ticker py-3 bg-dark">
+          <div class="container">
+            <div class="ticker-container">
+              <div class="ticker-track">
+                <!-- Itens do letreiro -->
+                <div class="ticker-item">
+                  <span class="ticker-number">15.000+</span>
+                  <span class="ticker-text">Alunos formados</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">99%</span>
+                  <span class="ticker-text">Taxa de aprovação</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">1.200+</span>
+                  <span class="ticker-text">Aprovados em medicina</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">10x</span>
+                  <span class="ticker-text">Mais aprovações</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">98%</span>
+                  <span class="ticker-text">Satisfação dos alunos</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">500+</span>
+                  <span class="ticker-text">Bolsas oferecidas</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">25</span>
+                  <span class="ticker-text">Anos de experiência</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">3.5k</span>
+                  <span class="ticker-text">Aulas disponíveis</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">100%</span>
+                  <span class="ticker-text">Professores especializados</span>
+                </div>
+                <div class="ticker-item">
+                  <span class="ticker-number">TOP 1</span>
+                  <span class="ticker-text">Melhor escola do estado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- Seção Estrutura -->
+    <section class="estrutura py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 titulo-destaque">NOSSA ESTRUTURA</h2>
+        
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card-estrutura">
+              <div class="card-icon">
+                <i class="bi bi-building"></i>
+              </div>
+              <h3>Instalações Modernas</h3>
+              <p>Salas de aula equipadas com tecnologia de ponta para o melhor aprendizado</p>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card-estrutura">
+              <div class="card-icon">
+                <i class="bi bi-book"></i>
+              </div>
+              <h3>Biblioteca Atualizada</h3>
+              <p>Acervo com mais de 10.000 títulos e áreas de estudo silenciosas</p>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card-estrutura">
+              <div class="card-icon">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3>Laboratórios de Tecnologia</h3>
+              <p>Computadores de última geração e softwares educacionais</p>
+            </div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card-estrutura">
+              <div class="card-icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h3>Salas de Apoio</h3>
+              <p>Ambientes para estudos em grupo e atendimento individualizado</p>
+            </div>
+          </div>
+          
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="card-estrutura">
+              <div class="card-icon">
+                <i class="bi bi-cup-hot"></i>
+              </div>
+              <h3>Cantina Saudável</h3>
+              <p>Opções nutritivas para manter a energia dos alunos</p>
+            </div>
+          </div>
+          
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="card-estrutura">
+              <div class="card-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3>Segurança 24h</h3>
+              <p>Monitoramento constante e controle de acesso</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5">
+          <button class="btn btn-crimson">AGENDE UMA VISITA</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="py-5">
